@@ -46,6 +46,27 @@
 							<li class="layui-nav-item">
 								<a href="{{ route('home') .'/'}}"><i class="fa fa-home"></i> 网站信息</a>
 							</li>
+							<?php
+								$menus = new \App\Lib\Menus();
+								$menusList = $menus->menusList();
+								foreach ($menusList as $value) {?>
+									<li class="layui-nav-item">
+										<a href="javascript:;"><i class="<?php echo $value['icon'];?>"></i> <?php echo $value['menu_name'];?><span class="layui-nav-more"></span></a>
+										<?php
+                                        if (isset($value['son']) && !empty($value['son'])) {
+											foreach ($value['son'] as $val) {
+                                        		$route =  $val['route'];
+											    ?>
+											<dl class="layui-nav-child">
+												<dd><a href="{{ route($route) .'/'}}"> <?php echo $val['menu_name'];?></a></dd>
+											</dl>
+										<?php	}
+                                        }
+										?>
+									</li>
+							<?php	}
+							?>
+
 							<li class="layui-nav-item">
 								<a href="javascript:;"><i class="fa fa-gears"></i> 产品中心<span class="layui-nav-more"></span></a>
 								<dl class="layui-nav-child">
