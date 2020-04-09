@@ -56,3 +56,8 @@ chmod -R 777 storage/
 ## 默认密码
 
 后台默认用户名admin，默认密码admin。
+
+## session databases
+    php artisan session:table
+    php artisan migrate
+    
