@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <title>Open Source BMS</title>
+    <title>后台管理</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="js/layui/css/layui.css">
@@ -17,7 +17,7 @@
     <![endif]-->
 </head>
 <body class="login">
-<div class="login-title">Open Source BMS</div>
+<div class="login-title">后台管理</div>
 <form class="layui-form login-form" action="{{ route('login') }}" method="POST">
 	{{ csrf_field() }}
     <div class="layui-form-item">
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-	
+
   <!--验证码   <div class="layui-form-item">
         <label class="layui-form-label">验证码</label>
         <div class="layui-input-block">

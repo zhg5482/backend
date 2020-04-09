@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Open Source BMS</title>
+    <title>后台管理</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="{{ asset('js/layui/css/layui.css') }}" media="all">
@@ -22,8 +22,8 @@
     <div class="layui-header header">
         <a href=""><img class="logo" src="{{ asset('images/admin_logo.png') }}" alt=""></a>
         <ul class="layui-nav" style="position: absolute;top: 0;right: 20px;background: none;">
-            <li class="layui-nav-item"><a href="/" target="_blank">前台首页</a></li>
-            <li class="layui-nav-item"><a href="" data-url="/clear" id="clear-cache">清除缓存</a></li>
+            {{--<li class="layui-nav-item"><a href="/" target="_blank">前台首页</a></li>--}}
+            {{--<li class="layui-nav-item"><a href="" data-url="/clear" id="clear-cache">清除缓存</a></li>--}}
             <li class="layui-nav-item" style="width:96px;height:60px">
                 <!--<a href="javascript:;"></a> -->
 				<a href="javascript:;">{{ Auth::user()->name }}</a>
@@ -83,7 +83,7 @@
 									<dd><a href="{{ route('link.index').'/' }}"> 友情链接</a></dd>
 								</dl>
 							</li>
-							
+
 							<li class="layui-nav-item" style="height: 30px; text-align: center"></li>
 						<span class="layui-nav-bar" style="top: 337.5px; height: 0px; opacity: 0;"></span>
 						</ul>
@@ -94,13 +94,13 @@
     </div>
 
 	@yield('body')
-   
-    <!--底部-->
-    <div class="layui-footer footer">
-        <div class="layui-main">
-            <p>2016-2017 &copy; <a href="https://github.com/xiayulei/open_source_bms" target="_blank">Open Source BMS</a></p>
-        </div>
-    </div>
+
+    {{--<!--底部-->--}}
+    {{--<div class="layui-footer footer">--}}
+        {{--<div class="layui-main">--}}
+            {{--<p>2020-2021 &copy; <a href="https://github.com/xiayulei/open_source_bms" target="_blank">后台管理</a></p>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 </div>
 
 <script>

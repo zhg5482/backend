@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Open Source BMS</title>
-    <meta name="description" content="Open Source BMS，全称Open Source Background System，基于ThinkPHP5开发的开源后台管理系统">
+    <title>后台管理</title>
+    <meta name="description" content="后台管理，全称Open Source Background System，基于ThinkPHP5开发的开源后台管理系统">
     <link rel="stylesheet" href="js/layui/css/layui.css">
     <style>
         .header {
@@ -69,7 +69,7 @@
 <div class="header">
     <div class="top-nav">
         <div class="layui-main">
-            <h1>Open Source BMS</h1>
+            <h1>后台管理</h1>
             <ul class="layui-nav">
                 <li class="layui-nav-item"><a href="">首页</a></li>
                 <li class="layui-nav-item"><a href="/login" target="_blank">后台演示</a></li>
@@ -83,7 +83,7 @@
 
 <div class="layui-main content">
     <fieldset class="layui-elem-field">
-        <legend>Open Source BMS</legend>
+        <legend>后台管理</legend>
         <div class="layui-field-box">
 		<p>原项目是由thinkphp5写的一个后台管理系统，地址为<a href="https://github.com/xiayulei/open_source_bms" target="_blank">https://github.com/xiayulei/open_source_bms</a>。<br/>作为练习，自己用laravel5.5重新实现了整个项目。</p>
         </div>

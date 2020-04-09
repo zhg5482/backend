@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+//Route::get('/', function () {
+//    return view('index');
+//});
 
-
+Route::get('/','LoginController@showLoginForm');
 Route::get('/login','LoginController@showLoginForm');
 Route::post('/login','LoginController@login')->name('login');
 Route::get('/logout','LoginController@logout')->name('logout')->middleware('auth');
