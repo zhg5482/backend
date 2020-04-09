@@ -53,3 +53,5 @@ Route::resource('slide_category','SlideCategoryController')->middleware('checkau
 Route::resource('slide','SlideController')->middleware('checkauth','auth');
 
 Route::resource('link','LinkController')->middleware('checkauth','auth');
+
+Route::resource('product','ProductController')->middleware('checkauth','auth');
