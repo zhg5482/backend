@@ -126,7 +126,7 @@ class AuthGroupController extends Controller
 		}
 		return redirect()->route('authgroup.index');
     }
-	
+
 	/**
      * 用js提交请求。获取权限组拥有的权限。
      */
@@ -142,7 +142,7 @@ class AuthGroupController extends Controller
 		 }
 		 return response()->json($menus);
 	}
-	
+
 	//更新权限
 	public function updateauth(Request $request){
 		$id = $request->id;
@@ -161,5 +161,5 @@ class AuthGroupController extends Controller
 		return redirect()->route('authgroup.show',['id'=>$id]);
 	}
 
-	
+
 }
